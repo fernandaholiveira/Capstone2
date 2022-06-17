@@ -1,1 +1,1 @@
-A start to the project
+Conversation flow of the negotiator chatbot
