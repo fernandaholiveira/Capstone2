@@ -1,0 +1,1683 @@
+{
+  "intents": [
+    {
+      "intent": "Budget",
+      "examples": [
+        {
+          "text": "budget option"
+        },
+        {
+          "text": "I want to check the money"
+        },
+        {
+          "text": "money that i have"
+        },
+        {
+          "text": "tell the budget"
+        },
+        {
+          "text": "tell the money"
+        }
+      ]
+    },
+    {
+      "intent": "Change",
+      "examples": [
+        {
+          "text": "change one option"
+        },
+        {
+          "text": "change the package"
+        },
+        {
+          "text": "I want to change"
+        },
+        {
+          "text": "modify"
+        },
+        {
+          "text": "replace"
+        }
+      ]
+    },
+    {
+      "intent": "Customize",
+      "examples": [
+        {
+          "text": "Customize"
+        },
+        {
+          "text": "Design"
+        },
+        {
+          "text": "I want to create"
+        },
+        {
+          "text": "I want to customize"
+        },
+        {
+          "text": "I want to personalize"
+        },
+        {
+          "text": "Personalize"
+        }
+      ],
+      "description": "I want to customize"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Airline",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Air Canada: from Toronto to Rio de Janeiro",
+          "synonyms": [
+            "10 hours",
+            "Air Canada",
+            "AirCanada",
+            "confortable",
+            "direct",
+            "direct flight",
+            "faster",
+            "ten hours",
+            "without stops"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Latam Airlines: from Toronto to Rio de Janeiro",
+          "synonyms": [
+            "20 hours",
+            "Basic",
+            "cheaper",
+            "cheapest",
+            "from United States",
+            "Latam",
+            "Latam Airline",
+            "Latam Airlines",
+            "Miami",
+            "United States",
+            "USA",
+            "with stop",
+            "with stopover"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Country",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Albania",
+          "synonyms": [
+            "Europe"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Brazil",
+          "synonyms": [
+            "Brasil",
+            "South America"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "India",
+          "synonyms": [
+            "Asia"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Hotel",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Copacabana Palace",
+          "synonyms": [
+            "5 star",
+            "belmond",
+            "best",
+            "better",
+            "Catherine",
+            "Copacabana",
+            "fancy",
+            "Madonna",
+            "Mick Jagger",
+            "Palace",
+            "premium"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Windsor Barra",
+          "synonyms": [
+            "4 stars",
+            "Barra",
+            "Basic",
+            "breathtaking",
+            "cheaper",
+            "cheapest",
+            "view",
+            "Windsor",
+            "Windsor Barra"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "ID",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "123456",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "333333",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "654321",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Meals",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Breakfast",
+          "synonyms": [
+            "1",
+            "breakfast",
+            "first meal",
+            "one "
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Breakfast and Dinner",
+          "synonyms": [
+            "2",
+            "all",
+            "Both",
+            "Breakfast and dinner",
+            "breakfast n dinner",
+            "Dinner and breakfast",
+            "dinner n breakfast",
+            "two"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dinner",
+          "synonyms": [
+            "Dinner ",
+            "last meal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "None",
+          "synonyms": [
+            "0",
+            "any",
+            "don't want",
+            "dont want",
+            "No",
+            "none",
+            "no one",
+            "zero"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "N",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "one",
+          "synonyms": [
+            "1",
+            "just one",
+            "one",
+            "uno"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "two",
+          "synonyms": [
+            "2",
+            "all",
+            "both",
+            "complete",
+            "two"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "zero",
+          "synonyms": [
+            "0",
+            "any",
+            "don't want",
+            "dont want",
+            "none",
+            "nothing",
+            "without",
+            "zero"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "No",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": [
+            "don't",
+            "dont",
+            "nay",
+            "neber",
+            "negative",
+            "never",
+            "No",
+            "none",
+            "Nop",
+            "no way"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Sightseeings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Corcovado",
+          "synonyms": [
+            "Christ",
+            "Corcovado",
+            "Cristo Redentor",
+            "Jesus",
+            "Statue"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Corcovado and Pão de Açúcar",
+          "synonyms": [
+            "2",
+            "all",
+            "both",
+            "Corcovado and Pao de Acucar",
+            "Corcovado n Pão de Açúcar",
+            "Pão de Açúcar and Corcovado",
+            "Pão de Açúcar n Corcovado",
+            "two"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "None",
+          "synonyms": [
+            "0",
+            "any",
+            "don't",
+            "dont",
+            "none",
+            "no one",
+            "zero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pão de Açúcar",
+          "synonyms": [
+            "bondinho",
+            "dois morros",
+            "montain",
+            "morro da urca",
+            "Pao de acucar",
+            "Pão de Açúcar",
+            "spectacular view"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-percentage",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Yes",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": [
+            "afirmative",
+            "all right",
+            "deal",
+            "fine",
+            "good",
+            "of course",
+            "ok",
+            "okay",
+            "please",
+            "positive",
+            "sure",
+            "yeah",
+            "yep",
+            "Yes "
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1656191323567",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Brazil... Good choice!! A tropical country in South America, with lots of sun and beautiful beaches, I'm sure you gonna love it! :)  Now we have to choose your airline company, two options are available: LATAM Airlines - cheaper one, with a stopover in the United States (Miami) - more than 20 hours to arrive (good to save some money and know another place) AirCanada - a more comfortable option, with a direct flight from Toronto - 10 hours to arrive  Which one is gonna be?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1656051973915",
+      "conditions": "@Country:Brazil",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1656129148426",
+      "previous_sibling": "handler_3_1656051973924"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Answer Airline Albania"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1656051973915",
+      "conditions": "@Country:Albania",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1656129188075",
+      "previous_sibling": "handler_10_1656129148426"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1656191323569",
+      "context": {
+        "Country": "@Country"
+      },
+      "conditions": "@Country",
+      "event_name": "input",
+      "dialog_node": "handler_11_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfect! Let's personalize your package... We have packages for three countries here... Albania, Brazil and India, where do you prefer to go?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1656051929273",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1656051973586",
+      "previous_sibling": "node_1_1656136302190"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Okay, I saved the info!   Now it's time to choose your hotel: We have the luxurious 5-star Copacabana Palace, located in the Copacabana neighbourhood as the name implies and has hosted celebrities such as Mick Jagger, Catherine Zeta-Jones and Madonna. The other 4-star option is Windsor Barra, located in the Barra da Tijuca neighbourhood and has a breathtaking view of the beach.  So, what will it be your lucky place?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_4_1656052675879",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1656052675880",
+      "previous_sibling": "handler_6_1656052675880"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hmm, it will be a nice stay!  Now it's your turn to tell me if you stay at the hotel a lot or prefer to walk around the city to have your meals.  You can just enjoy breakfast, breakfast and dinner or not enjoy any meal at the hotel...  What do you think? 0, 1 or 2 meals?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_3_1656052762121",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1656052762124",
+      "previous_sibling": "handler_3_1656052762124"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1656135931173",
+      "context": {
+        "LoyaltyX": "@ID:123456"
+      },
+      "conditions": "@ID:123456",
+      "event_name": "input",
+      "dialog_node": "handler_1_1656135931190"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_10_1656191323569",
+      "event_name": "focus",
+      "dialog_node": "handler_12_1656191323569",
+      "previous_sibling": "handler_11_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Brazil... Good choice!! A tropical country in South America, with lots of sun and beautiful beaches, I'm sure you gonna love it! :)  Now we have to choose your airline company, two options are available: LATAM Airlines - cheaper one, with a stopover in the United States (Miami) - more than 20 hours to arrive (good to save some money and know another place) AirCanada - a more comfortable option, with a direct flight from Toronto - 10 hours to arrive  Which one is gonna be?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1656191323569",
+      "conditions": "@Country:Brazil",
+      "event_name": "filled",
+      "dialog_node": "handler_13_1656191323569",
+      "previous_sibling": "handler_12_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Answer Airline Albania"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1656191323569",
+      "conditions": "@Country:Albania",
+      "event_name": "filled",
+      "dialog_node": "handler_14_1656191323569",
+      "previous_sibling": "handler_13_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Answer Airline India"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_10_1656191323569",
+      "conditions": "@Country:India",
+      "event_name": "filled",
+      "dialog_node": "handler_15_1656191323569",
+      "previous_sibling": "handler_14_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_16_1656191323569",
+      "context": {
+        "Airline": "@Airline"
+      },
+      "conditions": "@Airline",
+      "event_name": "input",
+      "dialog_node": "handler_17_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_16_1656191323569",
+      "event_name": "focus",
+      "dialog_node": "handler_18_1656191323569",
+      "previous_sibling": "handler_17_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_19_1656191323569",
+      "context": {
+        "Hotel": "@Hotel"
+      },
+      "conditions": "@Hotel",
+      "event_name": "input",
+      "dialog_node": "handler_20_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_19_1656191323569",
+      "event_name": "focus",
+      "dialog_node": "handler_21_1656191323569",
+      "previous_sibling": "handler_20_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1656051973915",
+      "context": {
+        "Country": "@Country"
+      },
+      "conditions": "@Country",
+      "event_name": "input",
+      "dialog_node": "handler_2_1656051973924"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1656136118831",
+      "context": {
+        "LoyaltyY": "@ID:654321"
+      },
+      "conditions": "@ID:654321",
+      "event_name": "input",
+      "dialog_node": "handler_2_1656136118843"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_22_1656191323569",
+      "context": {
+        "Meals": "@Meals"
+      },
+      "conditions": "@Meals",
+      "event_name": "input",
+      "dialog_node": "handler_23_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_22_1656191323569",
+      "event_name": "focus",
+      "dialog_node": "handler_24_1656191323569",
+      "previous_sibling": "handler_23_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_25_1656191323569",
+      "context": {
+        "Sightseeings": "@Sightseeings"
+      },
+      "conditions": "@Sightseeings",
+      "event_name": "input",
+      "dialog_node": "handler_26_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_25_1656191323569",
+      "event_name": "focus",
+      "dialog_node": "handler_27_1656191323569",
+      "previous_sibling": "handler_26_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What do you like to change?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1656191323567",
+      "event_name": "focus",
+      "dialog_node": "handler_28_1656191323569",
+      "previous_sibling": "node_2_1656191323569"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Perfect! Let's personalize your package... We have packages for three countries here... Albania, Brazil and India, where do you prefer to go?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_5_1656051973915",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1656051973924",
+      "previous_sibling": "handler_2_1656051973924"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1656052194055",
+      "context": {
+        "Airline": "@Airline"
+      },
+      "conditions": "@Airline",
+      "event_name": "input",
+      "dialog_node": "handler_3_1656052194056"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1656052762121",
+      "context": {
+        "Meals": "@Meals"
+      },
+      "conditions": "@Meals",
+      "event_name": "input",
+      "dialog_node": "handler_3_1656052762124"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! To complete your package, you just need to choose one more item, my favourite: sightseeins!   In the city of Rio de Janeiro, we have two world-renowned places: Corcovado, also known as the statue of Cristo Redentor, and Pão de Açúcar, a mountain with a spectacular view.   Want to include 0, 1 or 2 attractions in your trip?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_6_1656053299587",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1656053299589",
+      "previous_sibling": "handler_9_1656053299589"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1656135931173",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1656135931190",
+      "previous_sibling": "handler_1_1656135931190"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1656136163523",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1656136163537",
+      "previous_sibling": "handler_8_1656136163537"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1656052675879",
+      "context": {
+        "Hotel": "@Hotel"
+      },
+      "conditions": "@Hotel",
+      "event_name": "input",
+      "dialog_node": "handler_6_1656052675880"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1656052194055",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1656052194056",
+      "previous_sibling": "handler_3_1656052194056"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Answer Airline India"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_5_1656051973915",
+      "conditions": "@Country:India",
+      "event_name": "filled",
+      "dialog_node": "handler_8_1656129219401",
+      "previous_sibling": "handler_10_1656129188075"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1656136163523",
+      "context": {
+        "RegularCustomer": "@ID:333333"
+      },
+      "conditions": "@ID:333333",
+      "event_name": "input",
+      "dialog_node": "handler_8_1656136163537"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1656053299587",
+      "context": {
+        "Sightseeings": "@Sightseeings"
+      },
+      "conditions": "@Sightseeings",
+      "event_name": "input",
+      "dialog_node": "handler_9_1656053299589"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1656136118831",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1656136118843",
+      "previous_sibling": "handler_2_1656136118843"
+    },
+    {
+      "type": "standard",
+      "parent": "node_9_1656053671000",
+      "conditions": "@No",
+      "dialog_node": "node_10_1656053736955",
+      "previous_sibling": "node_1_1656053704845"
+    },
+    {
+      "type": "standard",
+      "title": "BUDGET TEST",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, I will help you with this... Please, tell me your budget for this trip :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1656132065473"
+      },
+      "conditions": "#Budget",
+      "dialog_node": "node_10_1656132009156",
+      "previous_sibling": "node_4_1656051929273"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What do you want to change in your package?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1656136302190",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1656191323567"
+      },
+      "conditions": "@Yes",
+      "dialog_node": "node_1_1656053618290",
+      "previous_sibling": "node_9_1656053671000"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Deal! \n\nI'm so glad I could have helped you find your ideal trip today!  Come back whenever you need to.\n\nHave an amazing travel!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1656053671000",
+      "conditions": "@Yes",
+      "dialog_node": "node_1_1656053704845"
+    },
+    {
+      "type": "standard",
+      "parent": "node_3_1656077632471",
+      "actions": [
+        {
+          "name": "Untitled",
+          "type": "assistant_action",
+          "parameters": {},
+          "result_variable": "action_result_1",
+          "assistant_action_settings": {
+            "use_global_variables": true,
+            "lookup_action_by_title": true
+          }
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "dialog_node": "node_1_1656077778706"
+    },
+    {
+      "type": "standard",
+      "title": "Price messages",
+      "parent": "node_4_1656051929273",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "$LoyaltyX || $LoyaltyY || $RegularCustomer",
+      "dialog_node": "node_1_1656136302190"
+    },
+    {
+      "type": "frame",
+      "title": "SLOT PACKAGE CHANGE PACKAGE",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Change || @Country || @Hotel || @Airline || @Meals || @Sightseeings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1656191323567",
+      "previous_sibling": "node_3_1656077632471"
+    },
+    {
+      "type": "standard",
+      "title": "Price messages",
+      "output": {},
+      "parent": "node_1_1656191323567",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "$LoyaltyX || $LoyaltyY || $RegularCustomer",
+      "dialog_node": "node_2_1656191323569"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is not a valid ID, could you retype, please?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1656050539887"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_3_1656051742060",
+      "previous_sibling": "node_4_1656134023394"
+    },
+    {
+      "type": "standard",
+      "title": "BUDGET ACTION",
+      "actions": [
+        {
+          "name": "action_9270",
+          "type": "assistant_action",
+          "parameters": {},
+          "result_variable": "action_result_1",
+          "assistant_action_settings": {
+            "use_global_variables": true,
+            "lookup_action_by_title": false
+          }
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Budget",
+      "dialog_node": "node_3_1656077632471",
+      "previous_sibling": "node_10_1656132009156"
+    },
+    {
+      "type": "standard",
+      "title": "Amount",
+      "parent": "node_10_1656132009156",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-currency or @sys-number",
+      "dialog_node": "node_3_1656132065473"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "All right, so so can we confirm your new package? :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1656191323569",
+      "conditions": "@No",
+      "dialog_node": "node_3_1656191323569"
+    },
+    {
+      "type": "frame",
+      "title": "SLOT PACKAGE CUSTOMIZING",
+      "output": {
+        "generic": []
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Customize",
+      "dialog_node": "node_4_1656051929273",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Regular Customer",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for letting me know who you are! \n\nTo continue, just choose for me, please... Do you prefer to customize your package with the options you want or tell me your budget and I check the options?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@ID:333333",
+      "dialog_node": "node_4_1656134023394",
+      "previous_sibling": "node_9_1656051700960",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Deal! \n\nI'm so glad I could have helped you find your ideal trip today!  Come back whenever you need to.\n\nHave an amazing travel!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1656191323569",
+      "conditions": "@Yes",
+      "dialog_node": "node_4_1656191323569"
+    },
+    {
+      "type": "frame",
+      "title": "ID Loyalty X",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for letting me know who you are! \n\nI checked here and I saw that you bought another travel package with us in the past five years. So, we have a gift for your loyalty... 5% of discount + Transfer in your next package :)\n\nTo continue, just choose for me, please... Do you prefer to customize your package with the options you want or tell me your budget and I check the options?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@ID:123456",
+      "dialog_node": "node_5_1656050539887",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_3_1656191323569",
+      "conditions": "@No",
+      "dialog_node": "node_5_1656191323569",
+      "previous_sibling": "node_4_1656191323569"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What do you want to change in your package?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1656191323569",
+      "conditions": "@Yes",
+      "dialog_node": "node_6_1656191323569",
+      "previous_sibling": "node_3_1656191323569"
+    },
+    {
+      "type": "frame",
+      "title": "ID Loyalty Y",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks for letting me know who you are! \n\nI checked here and I saw that you bought another travel package with us last year. So, we have a gift for your loyalty... 10% of discount + Transfer in your next package :)\n\nTo continue, just choose for me, please... Do you prefer to customize your package with the options you want or tell me your budget and I check the options?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "conditions": "@ID:654321",
+      "dialog_node": "node_9_1656051700960",
+      "previous_sibling": "node_5_1656050539887",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "All right, so so can we confirm your new package? :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1656136302190",
+      "conditions": "@No",
+      "dialog_node": "node_9_1656053671000"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Save just a little more and you can do your next trip :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1656132065473",
+      "conditions": "@sys-number >=1000 and @sys-number< 2000",
+      "dialog_node": "response_10_1656132908636",
+      "previous_sibling": "response_2_1656132756003"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you want for free? Even I who work here 24 hours a day can't do that! But I know you can save and come back here :) I believe in you!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1656132065473",
+      "conditions": "@sys-number==0",
+      "dialog_node": "response_1_1656132724968"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Maybe is better to save a little more money for your next trip :) We will be waiting for you!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1656132065473",
+      "conditions": "@sys-number < 1000",
+      "dialog_node": "response_2_1656132756003",
+      "previous_sibling": "response_1_1656132724968"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are almost there!! Save a little more and you can go to the trip of your dreams! Our cheapest package is $3600, want to check it out?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1656132065473",
+      "conditions": "@sys-number >=2000 and @sys-number< 3000",
+      "dialog_node": "response_2_1656132975739",
+      "previous_sibling": "response_10_1656132908636"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ready! This is the summary and the price of your travel package:  \n\nCountry: $Country \nAirline: $Airline \nHotel: $Hotel \nMeals included: $Meals \nSighseeings included: $Sightseeings  \n\nTotal price: CA$ XXXX.XX \n\nDo you want to change something?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1656136302190",
+      "conditions": "$RegularCustomer",
+      "dialog_node": "response_3_1656136445745",
+      "previous_sibling": "response_7_1656136402738"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Ready! This is the summary and the price of your travel package:  \nCountry: $Country \nAirline: $Airline \nHotel: $Hotel \nMeals included: $Meals \nSighseeings included: $Sightseeings \n\nTotal price: CA$ XXXX.XX \nTotal price with discount: CA$ XXXX.XX (5% less)  \nDo you want to change something?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1656136302190",
+      "conditions": "$LoyaltyX",
+      "dialog_node": "response_6_1656136388640",
+      "previous_sibling": "node_1_1656053618290"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ready! This is the summary and the price of your travel package:  \n\nCountry: $Country \nAirline: $Airline \nHotel: $Hotel \nMeals included: $Meals \nSighseeings included: $Sightseeings  \n\nTotal price: CA$ XXXX.XX \nTotal price with discount: CA$ XXXX.XX  (10% less)\n\nDo you want to change something?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1656136302190",
+      "conditions": "$LoyaltyY",
+      "dialog_node": "response_7_1656136402738",
+      "previous_sibling": "response_6_1656136388640"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Ready! This is the summary and the price of your travel package:  \nCountry: $Country \nAirline: $Airline \nHotel: $Hotel \nMeals included: $Meals \nSighseeings included: $Sightseeings \n\nTotal price: CA$ XXXX.XX \nTotal price with discount: CA$ XXXX.XX (5% less)  \nDo you want to change something?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1656191323569",
+      "conditions": "$LoyaltyX",
+      "dialog_node": "response_7_1656191323569",
+      "previous_sibling": "node_6_1656191323569"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ready! This is the summary and the price of your travel package:  \n\nCountry: $Country \nAirline: $Airline \nHotel: $Hotel \nMeals included: $Meals \nSighseeings included: $Sightseeings  \n\nTotal price: CA$ XXXX.XX \nTotal price with discount: CA$ XXXX.XX  (10% less)\n\nDo you want to change something?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1656191323569",
+      "conditions": "$LoyaltyY",
+      "dialog_node": "response_8_1656191323569",
+      "previous_sibling": "response_7_1656191323569"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_1_1656077778706",
+      "conditions": "$action_result_1",
+      "dialog_node": "response_9_1656077925968"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_1_1656077778706",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1656077926990",
+      "previous_sibling": "response_9_1656077925968"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ready! This is the summary and the price of your travel package:  \n\nCountry: $Country \nAirline: $Airline \nHotel: $Hotel \nMeals included: $Meals \nSighseeings included: $Sightseeings  \n\nTotal price: CA$ XXXX.XX \n\nDo you want to change something?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1656191323569",
+      "conditions": "$RegularCustomer",
+      "dialog_node": "response_9_1656191323569",
+      "previous_sibling": "response_8_1656191323569"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1656134023394",
+      "variable": "$RegularCustomer",
+      "dialog_node": "slot_10_1656136163523"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1656191323567",
+      "variable": "$Country",
+      "dialog_node": "slot_10_1656191323569",
+      "previous_sibling": "handler_28_1656191323569"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1656051929273",
+      "variable": "$Airline",
+      "dialog_node": "slot_1_1656052194055",
+      "previous_sibling": "slot_5_1656051973915"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1656191323567",
+      "variable": "$Airline",
+      "dialog_node": "slot_16_1656191323569",
+      "previous_sibling": "slot_10_1656191323569"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1656191323567",
+      "variable": "$Hotel",
+      "dialog_node": "slot_19_1656191323569",
+      "previous_sibling": "slot_16_1656191323569"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1656050539887",
+      "variable": "$LoyaltyX",
+      "dialog_node": "slot_2_1656135931173"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1656191323567",
+      "variable": "$Meals",
+      "dialog_node": "slot_22_1656191323569",
+      "previous_sibling": "slot_19_1656191323569"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1656191323567",
+      "variable": "$Sightseeings",
+      "dialog_node": "slot_25_1656191323569",
+      "previous_sibling": "slot_22_1656191323569"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1656051929273",
+      "variable": "$Meals",
+      "dialog_node": "slot_3_1656052762121",
+      "previous_sibling": "slot_4_1656052675879"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1656051700960",
+      "variable": "$LoyaltyY",
+      "dialog_node": "slot_3_1656136118831"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1656051929273",
+      "variable": "$Hotel",
+      "dialog_node": "slot_4_1656052675879",
+      "previous_sibling": "slot_1_1656052194055"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1656051929273",
+      "variable": "$Country",
+      "dialog_node": "slot_5_1656051973915",
+      "previous_sibling": "handler_1_1656051973586"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1656051929273",
+      "variable": "$Sightseeings",
+      "dialog_node": "slot_6_1656053299587",
+      "previous_sibling": "slot_3_1656052762121"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi! This is your Virtual Travel Agent and I am going to guide you to find the trip of your dreams with the best value for money.\n\nTo continue... I saw here that you are not logged in, could you enter your ID so I can know who I'm talking to? :)"
+              },
+              {
+                "text": "Hello! I am your Virtual Travel Agent and I am here to help you. \n\nTo start, could you please enter you ID?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Virtual Travel Agent-dialog",
+  "language": "en",
+  "description": ""
+}
