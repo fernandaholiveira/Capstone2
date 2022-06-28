@@ -1,0 +1,47 @@
+[
+  {
+    "value": "Corcovado",
+    "synonyms": [
+      "Corcovado",
+      "Cristo",
+      "Redentor",
+      "Jesus",
+      "Christ",
+      "Statue"
+    ]
+  },
+  {
+    "value": "Pão de Açúcar",
+    "synonyms": [
+      "PaoAcucar",
+      "Pão de Açúcar",
+      "Sugar Loaf",
+      "Bondinho",
+      "Dois morros",
+      "morro da urca",
+      "mountain",
+      "spectacular view",
+      "view"
+    ]
+  },
+  {
+    "value": "Both",
+    "synonyms": [
+      "Both",
+      "all",
+      "complete",
+      "2",
+      "two"
+    ]
+  },
+  {
+    "value": "None",
+    "synonyms": [
+      "None",
+      "any",
+      "0",
+      "dont want",
+      "don\u0027t"
+    ]
+  }
+]

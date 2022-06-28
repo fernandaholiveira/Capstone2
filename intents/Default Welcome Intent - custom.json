@@ -1,0 +1,54 @@
+{
+  "id": "3ded4666-6afa-42f7-afed-65cf52037872",
+  "parentId": "37749a11-80f9-41fc-bd0c-c8b13a24ce01",
+  "rootParentId": "37749a11-80f9-41fc-bd0c-c8b13a24ce01",
+  "name": "Default Welcome Intent - custom",
+  "auto": true,
+  "contexts": [
+    "DefaultWelcomeIntent-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "e608da7d-0ade-4a6b-aa5e-8b3f9d339a23",
+          "name": "customer_id",
+          "required": false,
+          "dataType": "@Customer_ID",
+          "value": "$customer_id",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Thanks for letting me know who you are! \n\nI checked here and I saw that you bought another travel package with us in the past five years. So, we have a gift for your loyalty... 5% of discount + Transfer in your next package :)\n\nTo continue, just choose for me, please... Do you prefer to customize your package with the options you want or tell me your budget and I check the options?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

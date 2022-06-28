@@ -1,0 +1,39 @@
+{
+  "id": "6b7cf040-8393-4196-acfb-eb1848b450d2",
+  "parentId": "ac84cc0b-053d-4894-8f8e-aa75ea9dbd9e",
+  "rootParentId": "ac84cc0b-053d-4894-8f8e-aa75ea9dbd9e",
+  "name": "Change - yes",
+  "auto": true,
+  "contexts": [
+    "Change-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Change.Change-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Deal! \n\nI\u0027m so glad I could have helped you find your ideal trip today!  Come back whenever you need to.\n\nHave an amazing travel!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

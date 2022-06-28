@@ -1,0 +1,33 @@
+[
+  {
+    "value": "Breakfast",
+    "synonyms": [
+      "Breakfast",
+      "first food",
+      "last food",
+      "one",
+      "1",
+      "just dinner"
+    ]
+  },
+  {
+    "value": "Breakfast and Dinner",
+    "synonyms": [
+      "Breakfast and Dinner",
+      "both",
+      "complete",
+      "all meals",
+      "two",
+      "2"
+    ]
+  },
+  {
+    "value": "None",
+    "synonyms": [
+      "None",
+      "any",
+      "no meal",
+      "0"
+    ]
+  }
+]

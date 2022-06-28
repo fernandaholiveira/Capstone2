@@ -1,0 +1,136 @@
+{
+  "id": "ac84cc0b-053d-4894-8f8e-aa75ea9dbd9e",
+  "name": "Change",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Change",
+      "affectedContexts": [
+        {
+          "name": "Change-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "824bbc6f-3b74-49ff-8aa5-48d2b6496f60",
+          "name": "Country",
+          "required": true,
+          "dataType": "@Country",
+          "value": "$country",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Ok, let\u0027s review the package options... We have packages for Albania, Brazil and India, where do you prefer to go?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "ef891872-8245-4f60-b908-8fbd673a1bfa",
+          "name": "Airline",
+          "required": true,
+          "dataType": "@Airline",
+          "value": "$airline",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Brazil... Check!\n\nNow we have to choose your airline company, two options are available:\nLATAM Airlines - with a stopover in the United States  (good to save some money and know another place)\nAirCanada - a more comfortable option, with a direct flight from Toronto\n\nWhich one is gonna be?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "902c6ab1-c28b-489b-9c10-7e9be05c6355",
+          "name": "Hotel",
+          "required": true,
+          "dataType": "@Hotel",
+          "value": "$hotel",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Right, I saved the info! \n\nNow it\u0027s time to choose your hotel:\n5-star Copacabana Palace, located in the Copacabana neighbourhood                                                                             4-star Windsor Barra, located in the Barra da Tijuca neighbourhood \nSo, what will it be your place?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "97458d97-5d0a-4ca5-ab19-590ecd286851",
+          "name": "Meals",
+          "required": true,
+          "dataType": "@Meals",
+          "value": "$meals",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Perfect!\n\nNow it\u0027s your turn to tell me if you will just enjoy breakfast, breakfast and dinner or not enjoy any meal at the hotel... \nWhat do you think?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "22d33ea6-6b76-4716-8bd2-1cc0fd2a0292",
+          "name": "Sightseeings",
+          "required": true,
+          "dataType": "@Sightseeins",
+          "value": "$sightseeings",
+          "defaultValue": "",
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Ok! To complete your package, you just need to know if you want to visit Corcovado, Pão de Açúcar or any sightseeings this time.\n\nHow is it going to be?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Done! The new summary and price of your travel package:\n\nCountry: $country\nAirline: $airline\nHotel: $hotel\nMeals included: $meals\nSighseeings included: $sightseeings\n\nTotal price: CA$ XXXX.XX\nTotal price with discount: CA$ XXXX.XX\n\nCould we make a deal? :)"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

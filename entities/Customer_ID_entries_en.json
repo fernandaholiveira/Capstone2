@@ -1,0 +1,23 @@
+[
+  {
+    "value": "LoyaltyX",
+    "synonyms": [
+      "LoyaltyX",
+      "123456"
+    ]
+  },
+  {
+    "value": "LoyaltyY",
+    "synonyms": [
+      "LoyaltyY",
+      "654321"
+    ]
+  },
+  {
+    "value": "Regular",
+    "synonyms": [
+      "Regular",
+      "333333"
+    ]
+  }
+]

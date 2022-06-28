@@ -1,0 +1,9 @@
+{
+  "id": "74fd473f-005e-40b9-a9a2-6bd730d524b8",
+  "name": "Country",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

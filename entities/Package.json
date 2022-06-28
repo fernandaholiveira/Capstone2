@@ -1,0 +1,9 @@
+{
+  "id": "80dae847-b5b5-4a10-8dff-c66046d060e5",
+  "name": "Package",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

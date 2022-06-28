@@ -1,0 +1,136 @@
+{
+  "id": "37b50d16-b43f-4936-88c0-6044b65c41e5",
+  "name": "Customize - custom",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Customize.Customize-custom",
+      "affectedContexts": [
+        {
+          "name": "Customize-custom-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "eee9fbde-a637-443a-8b98-9150df16d828",
+          "name": "Country",
+          "required": true,
+          "dataType": "@Country",
+          "value": "$country",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Perfect! Let\u0027s personalize your package... We have packages for three countries here... Albania, Brazil and India, where do you prefer to go?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "a3ebd35c-bf96-48e2-b75f-b0e8117f7853",
+          "name": "Airline",
+          "required": true,
+          "dataType": "@Airline",
+          "value": "$airline",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Brazil... Good choice!! A tropical country in South America, with lots of sun and beautiful beaches, I\u0027m sure you gonna love it! :)\n\nNow we have to choose your airline company, two options are available:\nLATAM Airlines - cheaper one, with a stopover in the United States (Miami) - more than 20 hours to arrive (good to save some money and know another place)\nAirCanada - a more comfortable option, with a direct flight from Toronto - 10 hours to arrive\n\nWhich one is gonna be?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "3f7c2987-5444-4c43-9d52-35b41db3d287",
+          "name": "Hotel",
+          "required": true,
+          "dataType": "@Hotel",
+          "value": "$hotel",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Okay, I saved the info! \n\nNow it\u0027s time to choose your hotel:\nWe have the luxurious 5-star Copacabana Palace, located in the Copacabana neighbourhood as the name implies and has hosted celebrities such as Mick Jagger, Catherine Zeta-Jones and Madonna. The other 4-star option is Windsor Barra, located in the Barra da Tijuca neighbourhood and has a breathtaking view of the beach.\n\nSo, what will it be your lucky place?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "045975b0-8072-4b83-b05a-7bfabe7ad4d4",
+          "name": "Meals",
+          "required": true,
+          "dataType": "@Meals",
+          "value": "$meals",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Hmm, it will be a nice stay!\n\nNow it\u0027s your turn to tell me if you stay at the hotel a lot or prefer to walk around the city to have your meals. \nYou can just enjoy breakfast, breakfast and dinner or not enjoy any meal at the hotel... \nWhat do you think?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "c0ef5f18-db60-4d03-ac73-1a9e55b1d221",
+          "name": "Sightseeings",
+          "required": true,
+          "dataType": "@Sightseeins",
+          "value": "$sightseeings",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Ok! To complete your package, you just need to choose one more item, my favourite: sightseeins! \n\nIn the city of Rio de Janeiro, we have two world-renowned places: Corcovado, also known as the statue of Cristo Redentor, and Pão de Açúcar, a mountain with a spectacular view. \n\nWant to include 0, 1 or 2 attractions in your trip?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Ready! This is the summary and the price of your travel package:\n\nCountry: $country\nAirline: $airline\nHotel: $hotel\nMeals included: $meals\nSighseeings included: $sightseeings\n\nTotal price: CA$ XXXX.XX\nTotal price with discount: CA$ XXXX.XX\n\nDo you want to change something?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "dd12c3e8-52b5-439d-aae0-a58b7ae6fa9f",
+    "data": [
+      {
+        "text": "customize",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8c8c4c3c-8fef-45f9-aa62-ff8c59ff5564",
+    "data": [
+      {
+        "text": "personalize",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d8987ca4-1fdd-4cac-9587-468cc5c114aa",
+    "data": [
+      {
+        "text": "choose",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "fbb19981-935e-4f89-9144-16d9fe84f558",
+    "data": [
+      {
+        "text": "design",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "c4338fd4-759b-4e85-a7fc-86cb97b371c2",
+    "data": [
+      {
+        "text": "I want to personalize",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "92899d7f-4f7e-4bc4-8032-83feaaeb65e3",
+    "data": [
+      {
+        "text": "I want to customize",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

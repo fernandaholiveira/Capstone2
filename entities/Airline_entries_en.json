@@ -1,0 +1,27 @@
+[
+  {
+    "value": "Latam",
+    "synonyms": [
+      "Latam",
+      "LATAM",
+      "Basic",
+      "Cheaper",
+      "Cheapest",
+      "from United States",
+      "Miami",
+      "with stop"
+    ]
+  },
+  {
+    "value": "Air Canada",
+    "synonyms": [
+      "Air Canada",
+      "AirCanada",
+      "direct flight",
+      "direct",
+      "faster",
+      "10 hours",
+      "without stop"
+    ]
+  }
+]

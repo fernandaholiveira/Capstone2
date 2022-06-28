@@ -1,0 +1,9 @@
+{
+  "id": "e6b557c4-0ca8-4be1-a755-3fbdf02800ee",
+  "name": "Meals",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

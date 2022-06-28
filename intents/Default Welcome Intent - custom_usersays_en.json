@@ -1,0 +1,17 @@
+[
+  {
+    "id": "45fb7a21-0b8a-44f5-9e6d-54f8cda50e95",
+    "data": [
+      {
+        "text": "123456",
+        "meta": "@Customer_ID",
+        "alias": "customer_id",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

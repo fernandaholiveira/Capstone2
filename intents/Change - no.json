@@ -1,0 +1,39 @@
+{
+  "id": "e47957cc-398e-47a2-a32c-1f6f7813ef42",
+  "parentId": "ac84cc0b-053d-4894-8f8e-aa75ea9dbd9e",
+  "rootParentId": "ac84cc0b-053d-4894-8f8e-aa75ea9dbd9e",
+  "name": "Change - no",
+  "auto": true,
+  "contexts": [
+    "Change-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Change.Change-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Ok, maybe next time... I will be here to help you!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
